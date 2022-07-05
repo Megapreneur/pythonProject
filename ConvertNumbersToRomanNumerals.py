@@ -6,9 +6,12 @@ def convertNumberToRoman(number):
     tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
     units = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
-    result = thousands[number / 1000] + hundreds[(number % 1000) / 100] + tens[(number % 100) / 10] + units[number % 10]
+    result = thousands[number // 1000] + hundreds[(number % 1000) // 100] + tens[(number % 100) // 10] + units[number % 10]
 
     return result
+
+
+print(convertNumberToRoman(2022))
 
 
 
