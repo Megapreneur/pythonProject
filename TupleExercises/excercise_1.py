@@ -8,5 +8,5 @@ for number in cardinal_numbers:
 
 position1, position2, position3 = "first", "second", "third"
 print(position3)
-print(position1)
+print(position1[2:6])
 print(position2)
