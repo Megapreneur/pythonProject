@@ -1,11 +1,14 @@
 def prime_checker(number):
-    for i in range(2, number):
+    is_prime = True
+    for i in range(2, number-1 ):
         if number % i == 0:
-            return "it is not a prime number"
-        else:
-            return "it's a prime number"
+            is_prime = False
+    if is_prime:
+        print("it is a prime number")
+    else:
+        print("it is not a prime number")
 
 
 n = int(input("Check this number: "))
-print(prime_checker(number=n))
+prime_checker(number=n)
 
