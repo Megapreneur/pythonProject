@@ -4,4 +4,19 @@ programming_dict = {
     "Loop": "The action of doing something over and over again.",
 }
 
-print(programming_dict["Bug"])
+# Retrieving items from dictionary.
+# print(programming_dict["Bug"])
+
+# Adding new items to dictionary.
+programming_dict["python"] = "It is a key programming language for data analysis."
+
+# print(programming_dict)
+
+# create an empty dictionary.
+empty_dict = {}
+
+for key in programming_dict:
+    print(key)
+    print(programming_dict[key])
+
+
