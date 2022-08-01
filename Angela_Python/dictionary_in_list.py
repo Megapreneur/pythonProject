@@ -1,23 +1,28 @@
 travel_log = [
     {
         "country": "France",
-        "cities_visited": ["Paris", "Lille", "Dijon"],
-        "total_visits": 5
+        "cities": ["Paris", "Lille", "Dijon"],
+        "visits": 5
     },
     {
         "country": "Germany",
-        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
-        "total_visits": 7
+        "cities": ["Berlin", "Hamburg", "Stuttgart"],
+        "visits": 7
     },
     {
         "country": "Nigeria",
-        "cities_visited": ["Abuja", "Lagos", "Imo"],
-        "total_visits": 28
+        "cities": ["Abuja", "Lagos", "Imo"],
+        "visits": 28
     },
 ]
-def add_new_country(country, cities_visited, total_visits):
+def add_new_country(country_visited, cities_visited, total_visits):
+    new_country = {}
+    new_country["country"] = country_visited
+    new_country["cities"] = cities_visited
+    new_country["visits"] = total_visits
+    travel_log.append(new_country)
 
 
-add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+add_new_country("Russia", ["Moscow", "Saint Petersburg"], 2)
 
 print(travel_log)
