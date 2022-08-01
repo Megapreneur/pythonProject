@@ -15,6 +15,8 @@ travel_log = [
         "visits": 28
     },
 ]
+
+
 def add_new_country(country_visited, cities_visited, total_visits):
     new_country = {}
     new_country["country"] = country_visited

@@ -40,5 +40,5 @@ travel_diary2 = [
         "country": "Nigeria",
         "cities_visited": ["Abuja", "Lagos", "Imo"],
         "total_visits": 28
-    }, 
+    },
 ]
