@@ -39,7 +39,7 @@ first_answer = calculation_function(num1, num2)
 print(f"{num1} {operation_symbol} {num2} = {first_answer}")
 should_continue = input("Type 'y' to continue calculating or 'n' to end calculating: ")
 
-while
+
 
 operation_symbol = input("Pick another operation: ")
 num3 = int(input("What's the second number?: "))
