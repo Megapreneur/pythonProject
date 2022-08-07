@@ -1,6 +1,5 @@
 # Calculator
 
-
 # Add
 def add(n1, n2):
     return n1 + n2
@@ -31,8 +30,8 @@ operations = {
 
 def calculator():
     num1 = int(input("What's the first number?: "))
-    for key in operations:
-        print(key)
+    for symbol in operations:
+        print(symbol)
     should_continue = True
 
     while should_continue:
@@ -48,7 +47,6 @@ def calculator():
         else:
             should_continue = False
             calculator()
-
 
 calculator()
 
