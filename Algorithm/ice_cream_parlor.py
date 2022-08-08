@@ -1,12 +1,12 @@
-def icecream_parlor(m, arr):
+m = 5
 
-    new_arr = []
-    for x in arr:
-        new_arr.append(x + m)
+arr = [1,2,3,4,6]
+lst = []
+for i in arr:
+    for j in arr:
+        if i + j == m:
+            lst.append(i)
+            lst.append(j)
+    break
 
-    print(new_arr)
-
-
-list_n = [1, 2, 3, 4, 5, 6]
-
-icecream_parlor(4, list_n)
+print(lst)
