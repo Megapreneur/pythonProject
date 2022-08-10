@@ -12,10 +12,3 @@
 #
 #
 # digital_root(n)
-
-
-names = ["ALex", "Beth", "Caroline", "Eleanor", "Freddie"]
-
-upper_case_name = [name.upper() for name in names if len(name) >= 5]
-
-print(upper_case_name)
